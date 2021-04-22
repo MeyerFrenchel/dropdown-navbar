@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
-import { Button } from './Button';
+import { TestButton } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import Dropdown from './Dropdown';
 import LogoPic from '../images/logo.png';
+import styled from 'styled-components';
+
+const ModifyTestButton = styled(TestButton)`
+  background-color: rebeccapurple;
+`
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -97,8 +102,8 @@ function Navbar() {
         </ul>
         <div className="nav-btn-container">
           <i className="fas fa-cart-plus  fa-2x"></i>
-          <Button title={'Sign In'}/>
-          <Button title={'Sign Out'}/>
+          <TestButton>Sign in</TestButton>
+          <ModifyTestButton>Sign out</ModifyTestButton>
         </div>
 
       </nav>

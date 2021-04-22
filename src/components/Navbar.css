@@ -71,11 +71,7 @@
   display: none;
 }
 
-.nav-btn-container {
-  display: flex;
-  justify-content: space-around;
-  width: 30vh;
-}
+
 
 .fa-cart-plus {
   color: orange;
